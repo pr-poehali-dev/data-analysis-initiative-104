@@ -3,51 +3,51 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
+    title: "Голосовой дневник",
+    description: "Говорите каждый день — о жизни, мыслях, опыте. ИИ запоминает всё и учится думать как вы.",
+    icon: "mic",
+    badge: "Голос",
+  },
+  {
+    title: "Личный ИИ-помощник",
+    description: "Чем больше вы общаетесь, тем умнее становится ваш персональный ИИ — он знает вас лучше любого другого.",
     icon: "brain",
-    badge: "ИИ",
+    badge: "Ваш ИИ",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
-  },
-  {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
+    title: "Цифровое наследие",
+    description: "Ваши знания, ценности и опыт сохранятся навсегда и будут переданы детям и внукам в живой форме.",
     icon: "globe",
-    badge: "Точность",
+    badge: "Вечность",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
+    title: "Вклад в развитие ИИ",
+    description: "Ваши данные (анонимно) улучшают общую модель — вы буквально участвуете в создании ИИ будущего.",
     icon: "zap",
-    badge: "Умный",
+    badge: "Прогресс",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
-  },
-  {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
+    title: "Апгрейд с каждым днём",
+    description: "Ваш помощник обновляется автоматически: новые навыки, лучшее понимание контекста, точнее ответы.",
     icon: "target",
-    badge: "XR Ready",
+    badge: "Рост",
+  },
+  {
+    title: "Полная приватность",
+    description: "Вы решаете, что остаётся только вашим, а что идёт в общий фонд знаний. Контроль — у вас.",
+    icon: "lock",
+    badge: "Защита",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="features" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Говори — и оставь след в истории</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Каждое ваше слово делает ИИ умнее, а ваше наследие — бессмертным
           </p>
         </div>
 
@@ -61,12 +61,12 @@ export function FeaturesSection() {
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
+                    {feature.icon === "brain" && "🧠"}
+                    {feature.icon === "lock" && "🔒"}
+                    {feature.icon === "globe" && "🌐"}
+                    {feature.icon === "zap" && "⚡"}
+                    {feature.icon === "mic" && "🎙️"}
+                    {feature.icon === "target" && "📈"}
                   </span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
